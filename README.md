@@ -67,3 +67,52 @@ In addition to the packages specified in the table above, the following packages
 - `elixir`: 1.18.3
 
 See [Dockerfile](Dockerfile) for the full details of installed packages.
+
+## Flipper Zero RFID Toolkit
+
+This repository includes a professional-grade RFID toolkit for Flipper Zero with comprehensive storage, duplication, and transmission capabilities.
+
+### Features
+
+- **Storage System**: SQLite-based storage with full CRUD operations, import/export, and search capabilities
+- **Duplication**: Clone tags, convert to writable formats, and analyze tag structures
+- **Transmission**: Serial communication with Flipper Zero for tag reading, writing, and emulation
+
+### Quick Start
+
+```bash
+# Install the toolkit
+cd rfid-toolkit
+pip install -e .
+
+# Add a tag
+flipper-rfid storage add \
+  --uid "DEADBEEF01234567" \
+  --data "0102030405060708" \
+  --name "My RFID Card" \
+  --type "EM4100"
+
+# List all tags
+flipper-rfid storage list
+
+# Clone a tag
+flipper-rfid duplicate clone "My RFID Card" --new-name "My RFID Card Backup"
+
+# Transmit to Flipper Zero (requires device connected)
+flipper-rfid transmit send "My RFID Card" --mode emulate
+```
+
+### Documentation
+
+For complete documentation, see [rfid-toolkit/README.md](rfid-toolkit/README.md).
+
+### Supported Tag Types
+
+- EM4100/EM4102 (LF)
+- HID Prox (LF)
+- Indala (LF)
+- MIFARE Classic (HF)
+- MIFARE Ultralight (HF)
+- NTAG (HF/NFC)
+- iClass (HF)
+- T5577 (Programmable LF)
