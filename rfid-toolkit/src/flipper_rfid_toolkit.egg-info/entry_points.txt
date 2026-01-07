@@ -1,0 +1,2 @@
+[console_scripts]
+flipper-rfid = rfid_toolkit.cli:main
