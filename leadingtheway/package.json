@@ -1,0 +1,16 @@
+{
+  "name": "leadingtheway",
+  "version": "1.0.0",
+  "description": "LeadingTheWay - Accessibility and Development Excellence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "development"
+  ],
+  "author": "LeadingTheWay Team",
+  "license": "MIT"
+}
