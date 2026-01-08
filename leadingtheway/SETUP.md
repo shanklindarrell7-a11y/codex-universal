@@ -7,22 +7,21 @@
 
 ## Installation
 
-1. Clone the repository:
+1. Navigate to the project directory:
    ```bash
-   git clone https://github.com/shanklindarrell7-a11y/leadingtheway.git
    cd leadingtheway
    ```
 
-2. Install dependencies:
+2. Install dependencies (if any):
    ```bash
    npm install
    ```
 
-## Development
+## Running the Application
 
-To start the development server:
+To start the application:
 ```bash
-npm run dev
+npm start
 ```
 
 ## Testing
@@ -30,11 +29,4 @@ npm run dev
 To run tests:
 ```bash
 npm test
-```
-
-## Building
-
-To build for production:
-```bash
-npm run build
 ```
