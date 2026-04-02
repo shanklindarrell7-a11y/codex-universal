@@ -1,0 +1,17 @@
+{
+  "name": "leadingtheway",
+  "version": "1.0.0",
+  "description": "LeadingTheWay - Accessibility and Development Excellence",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/index.test.js"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "development"
+  ],
+  "author": "LeadingTheWay Team",
+  "license": "MIT"
+}
